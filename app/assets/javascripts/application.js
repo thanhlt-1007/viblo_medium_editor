@@ -84,4 +84,18 @@ $(document).ready(function() {
             hideOnClick: true
         }
     });
+
+    var editorAnchor = new MediumEditor('.js-editor-article-content-anchor', {
+        toolbar: {
+            buttons: ['bold', 'italic', 'underline', 'anchor']
+        },
+        anchor: {
+            customClassOption: null,
+            customClassOptionText: 'Button',
+            linkValidation: false,
+            placeholderText: 'Paste or type a link',
+            targetCheckbox: false,
+            targetCheckboxText: 'Open in new window'
+        }
+    });
 });
