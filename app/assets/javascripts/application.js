@@ -77,4 +77,11 @@ $(document).ready(function() {
             previewValueSelector: 'a'
         }
     });
+
+    var editorPlaceholder = new MediumEditor('.js-editor-article-content-placeholder', {
+        placeholder: {
+            text: 'Type your text',
+            hideOnClick: true
+        }
+    });
 });
