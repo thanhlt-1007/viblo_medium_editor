@@ -1,0 +1,10 @@
+<div class="container">
+  <h2>New Article</h2>
+
+  <%= form_for @article do |f| %>
+    <div class="form-group">
+      <%= f.text_area :content, class: "form-control", rows: 10 %>
+    </div><br>
+    <button type="submit" class="btn btn-success w-100">Submit</button>
+  <% end %>
+</div>
