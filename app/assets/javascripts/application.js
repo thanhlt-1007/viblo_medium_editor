@@ -36,4 +36,38 @@ $(document).ready(function() {
             })
         }
     });
+
+    var editorButtons = new MediumEditor('.js-editor-article-content-buttons', {
+        buttonLabels: 'fontawesome',
+        toolbar: {
+            buttons: [
+                'bold',
+                'italic',
+                'underline',
+                'strikethrough',
+                'superscript',
+                'subscript',
+                'image',
+                'html',
+                'orderedlist',
+                'unorderedlist',
+                'indent',
+                'outdent',
+                'justifyCenter',
+                'justifyFull',
+                'justifyLeft',
+                'justifyRight',
+                'removeFormat',
+                'quote',
+                'pre',
+                'anchor',
+                'h1',
+                'h2',
+                'h3',
+                'h4',
+                'h5',
+                'h6'
+            ]
+        }
+    });
 });
