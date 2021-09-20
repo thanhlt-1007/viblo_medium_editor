@@ -2,6 +2,9 @@
 //= require popper
 //= require bootstrap-sprockets
 
+//= require medium-editor
+//= require medium-editor-insert-plugin
+
 $(document).ready(function() {
-  alert('123');
+  var editor = new MediumEditor('.js-editor-article-content');
 });
