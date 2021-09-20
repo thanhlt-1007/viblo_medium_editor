@@ -70,4 +70,11 @@ $(document).ready(function() {
             ]
         }
     });
+
+    var editorAnchorPreview = new MediumEditor('.js-editor-article-content-anchor-preview', {
+        anchorPreview: {
+            hideDelay: 500,
+            previewValueSelector: 'a'
+        }
+    });
 });
